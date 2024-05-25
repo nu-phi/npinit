@@ -1,0 +1,93 @@
+{
+  "name": "extraterm",
+  "version": "0.77.0",
+  "description": "A terminal",
+  "author": "Simon Edwards",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sedwards2009/extraterm.git"
+  },
+  "scripts": {
+    "run": "QT_SCALE_FACTOR_ROUNDING_POLICY=RoundPreferFloor qode main/dist/main.cjs",
+    "run-valgrind": "valgrind qode main/dist/main.js",
+    "run-strace": "strace -f -o strace.log qode main/dist/main.js",
+    "run-theme-test": "qode main/build/ThemeTestUtility.js",
+    "build": "wsrun --concurrency 5 --exclude-missing --stages build",
+    "clean": "wsrun --concurrency 1 --exclude-missing --stages clean",
+    "download-launcher-executable": "node build_scripts/download_launcher_executables.mjs v19",
+    "download-deploy-tool": "node build_scripts/download_deploy_tool.mjs",
+    "download-extraterm-commands": "node build_scripts/download_extraterm-commands.mjs v0.9.4",
+    "lint": "wsrun --concurrency 2 --exclude-missing --stages lint",
+    "lint-strict": "wsrun --concurrency 2 --exclude-missing --stages lint-strict",
+    "package": "jam-pack-nodegui --config build_scripts/extraterm-jam-pack.json -D build.applicationName=extratermqt -D build.applicationVersion=$(git describe --tags | shx sed 's/v//')",
+    "test": "wsrun --concurrency 2 --exclude-missing --stages test",
+    "timeout_test": "qode timeout_test.js"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "resolutions": {
+    "@types/node": "18.11.18",
+    "typescript": "5.2.2",
+    "@nodegui/nodegui": "0.66.0",
+    "7zip-bin": "5.1.1"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "main",
+      "packages/*",
+      "extensions/About",
+      "extensions/Autocomplete",
+      "extensions/Autolink",
+      "extensions/Colorizer",
+      "extensions/CopyLink",
+      "extensions/CopyBlock",
+      "extensions/DefaultTerminalTheme",
+      "extensions/DirectoryCommands",
+      "extensions/DownloadBlock",
+      "extensions/CommunityTerminalThemes",
+      "extensions/Find",
+      "extensions/ImageBlock",
+      "extensions/InsertEmoji",
+      "extensions/InternalCommands",
+      "extensions/ITermColorsTerminalThemeProvider",
+      "extensions/UnixSessionBackend",
+      "extensions/UnixSessionEditor",
+      "extensions/ProxySessionBackend",
+      "extensions/ProxySessionEditor",
+      "extensions/OpenLink",
+      "extensions/TerminalTitle",
+      "extensions/Tips",
+      "extensions/TLDRPages",
+      "extensions/UpdateChecker",
+      "extensions/WindowsConsoleSessionBackend",
+      "extensions/WindowsConsoleSessionEditor"
+    ],
+    "nohoist": [
+      "**/@types/jest"
+    ]
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "0.66.0",
+    "@nodegui/qode": "18.12.1",
+    "node-gyp": "^8.3.0"
+  },
+  "devDependencies": {
+    "@yarnpkg/parsers": "2.5.0-rc.7",
+    "commander": "^9.4.0",
+    "extraterm-uuid": "1.0.0",
+    "fs-extra": "^10.0.0",
+    "git-repo-info": "^1.4.1",
+    "jam-pack-nodegui": "0.19.0",
+    "jest": "27.5.1",
+    "modclean": "3.0.0-beta.1",
+    "readdirp": "3.6.0",
+    "shelljs": "^0.8.5",
+    "shx": "^0.3.4",
+    "typescript": "5.2.2",
+    "wsrun": "5.2.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}

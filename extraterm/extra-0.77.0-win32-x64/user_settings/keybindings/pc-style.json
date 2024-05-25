@@ -1,0 +1,13 @@
+{
+  "basedOn": "pc-style",
+  "customBindings": [
+    {
+      "command": "extraterm:window.focusPaneLeft",
+      "keys": []
+    },
+    {
+      "command": "extraterm:window.focusPaneRight",
+      "keys": []
+    }
+  ]
+}

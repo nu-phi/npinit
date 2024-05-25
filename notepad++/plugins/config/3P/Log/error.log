@@ -1,0 +1,72 @@
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:36:58
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:37:52
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:39:19
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:39:41
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:40:38
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:40:50
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:42:46
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+
+============================================================
+WHAT : Error parsing C:\Users\sergi\AppData\Roaming\Notepad++\config.xml : Object reference not set to an instance of an object.
+WHEN : 2024-05-24 07:43:40
+WHERE : v1.8.8, _3PA.NppCore.Npp+NppConf.Reload(), line 0
+DETAILS : 
+    System.NullReferenceException: Object reference not set to an instance of an object.
+    at _3PA.NppCore.Npp.NppConf.Reload()
+
+

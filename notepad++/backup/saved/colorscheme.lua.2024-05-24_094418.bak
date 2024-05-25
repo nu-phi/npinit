@@ -1,0 +1,87 @@
+call dein#add('ray-x/aurora')  " for dein user
+
+Plug 'ray-x/aurora'      " for Plug user
+
+set termguicolors            " 24 bit color
+let g:aurora_italic = 1     " italic
+let g:aurora_transparent = 1     " transparent
+let g:aurora_bold = 1     " bold
+let g:aurora_darker = 1     " darker background
+
+colorscheme aurora
+
+" customize your own highlight
+hi Normal guibg=NONE ctermbg=NONE "remove background
+hi String guibg=#339922 ctermbg=NONE "remove background
+
+" customize your own highlight with lua
+lua <<EOF
+  vim.api.nvim_set_hl(0, '@string', {fg='#59E343'})
+  vim.api.nvim_set_hl(0, '@field', {fg='#f93393'})
+  vim.api.nvim_set_hl(0, '@number', {fg='#e933e3'})
+EOF
+
+
+
+
+
+
+
+
+-- return {
+  -- 'catppuccin/nvim',
+  -- priority = 1000,
+  -- config = function()
+-- require("catppuccin").setup({
+    -- flavour = "macchiato", -- latte, frappe, macchiato, mocha
+    -- background = { -- :h background
+        -- light = "latte",
+        -- dark = "mocha",
+    -- },
+    -- transparent_background = true, -- disables setting the background color.
+    -- show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+    -- term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+    -- dim_inactive = {
+        -- enabled = false, -- dims the background color of inactive window
+        -- shade = "dark",
+        -- percentage = 0.15, -- percentage of the shade to apply to the inactive window
+    -- },
+    -- no_italic = false, -- Force no italic
+    -- no_bold = false, -- Force no bold
+    -- no_underline = false, -- Force no underline
+    -- styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        -- comments = { "italic" }, -- Change the style of comments
+        -- conditionals = { "italic" },
+        -- loops = {},
+        -- functions = {},
+        -- keywords = {},
+        -- strings = {},
+        -- variables = {},
+        -- numbers = {},
+        -- booleans = {},
+        -- properties = {},
+        -- types = {},
+        -- operators = {},
+        miscs = {}, -- Uncomment to turn off hard-coded styles
+    -- },
+    -- color_overrides = {},
+    -- custom_highlights = {},
+    -- default_integrations = true,
+    -- integrations = {
+        -- cmp = true,
+        -- gitsigns = true,
+        -- nvimtree = true,
+        -- treesitter = true,
+        -- notify = false,
+        -- mini = {
+            -- enabled = true,
+            -- indentscope_color = "",
+        -- },
+        For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+    -- },
+-- })
+
+setup must be called before loading
+-- vim.cmd.colorscheme "catppuccin"  
+  -- end,
+-- }

@@ -1,0 +1,119 @@
+{
+  "commandLineActions": [
+    {
+      "match": ".*",
+      "matchType": "regexp",
+      "frameRule": "always_frame",
+      "frameRuleLines": 1
+    }
+  ],
+  "sessions": [
+    {
+      "uuid": "0aabd0d8-0fd8-4a58-b300-800ffcc156c2",
+      "name": "nu",
+      "type": "wsl",
+      "extensions": {},
+      "args": "--interactive",
+      "initialDirectory": "",
+      "distribution": "",
+      "useDefaultShell": false,
+      "shell": "Nushell"
+    },
+    {
+      "uuid": "8874205c-bd56-44d7-b47a-6f5b820aa536",
+      "name": "PowerShell Core",
+      "type": "windows-console",
+      "exe": "pwsh.exe",
+      "args": "",
+      "initialDirectory": null
+    },
+    {
+      "uuid": "7d665a2d-e5b4-4610-b0f3-bc45eb383c07",
+      "name": "WSL Default",
+      "type": "wsl",
+      "useDefaultShell": true,
+      "shell": "",
+      "args": "",
+      "distribution": "",
+      "initialDirectory": null
+    },
+    {
+      "uuid": "3094a4d9-ac7f-46b3-9075-de66e192a88c",
+      "name": "WSL Debian",
+      "type": "wsl",
+      "useDefaultShell": true,
+      "shell": "",
+      "args": "",
+      "distribution": "",
+      "initialDirectory": "",
+      "extensions": {}
+    },
+    {
+      "uuid": "58d3f9b8-a60b-4e6d-8764-0d7eab24d2f5",
+      "name": "WSL podman-machine-default",
+      "type": "wsl",
+      "useDefaultShell": true,
+      "shell": "",
+      "args": "",
+      "distribution": "",
+      "initialDirectory": "",
+      "extensions": {}
+    },
+    {
+      "uuid": "56ab8b9d-a306-4b01-8de0-44856fcfd223",
+      "name": "CMD",
+      "type": "windows-console",
+      "exe": "cmd.exe",
+      "args": "",
+      "initialDirectory": null
+    },
+    {
+      "uuid": "3bb34255-e91c-456e-af83-6edfabe0dc23",
+      "name": "PowerShell",
+      "type": "windows-console",
+      "exe": "powershell.exe",
+      "args": "",
+      "initialDirectory": null
+    }
+  ],
+  "autoCopySelectionToClipboard": true,
+  "blinkingCursor": false,
+  "cursorStyle": "block",
+  "frameRule": "always_frame",
+  "frameRuleLines": 500,
+  "keybindingsName": "pc-style",
+  "minimizeToTray": false,
+  "showTrayIcon": false,
+  "scrollbackMaxFrames": 100,
+  "scrollbackMaxLines": 10000,
+  "terminalFont": "Liga DejaVu Sans Mono",
+  "terminalFontSize": 13,
+  "terminalDisplayLigatures": true,
+  "terminalMarginStyle": "normal",
+  "tipCounter": 0,
+  "tipTimestamp": 0,
+  "titleBarStyle": "native",
+  "uiScalePercent": 100,
+  "windowBackgroundMode": "opaque",
+  "windowBackgroundTransparencyPercent": 50,
+  "closeWindowWhenEmpty": true,
+  "middleMouseButtonAction": "paste",
+  "middleMouseButtonShiftAction": "paste",
+  "middleMouseButtonControlAction": "paste",
+  "rightMouseButtonAction": "context_menu",
+  "rightMouseButtonShiftAction": "context_menu",
+  "rightMouseButtonControlAction": "context_menu",
+  "activeExtensions": {
+    "about": true
+  },
+  "themeTerminal": "itermcolors-terminal-theme-provider:Two Dark.itermcolors",
+  "windowConfiguration": {
+    "0": {
+      "isMaximized": false,
+      "x": -735,
+      "y": -1409,
+      "width": 1718,
+      "height": 1378
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.git
+.hg
+.svn
+*.com
+*.dll
+*.exe
+*.lib
+*.obj
+*.pyc
+*.pyd
+*.pyo

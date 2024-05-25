@@ -1,0 +1,99 @@
+vim.cmd([[set runtimepath=$PV_RUNTIME]])
+
+
+ 
+  return {
+
+    { 'neovim/nvim-lspconfig' },
+    -- {
+    --   'simrat39/rust-tools.nvim',
+    --   config = function()
+    --     require('rust-tools').setup({
+    --       server = {
+    --         on_attach = function(client, bufnr)
+    --           require('navigator.lspclient.mapping').setup({ client = client, bufnr = bufnr }) -- setup navigator keymaps here,
+    --           -- otherwise, you can define your own commands to call navigator functions
+    --         end,
+    --       },
+    --     })
+    --   end,
+    -- },
+    { 'ray-x/lsp_signature.nvim' },
+    {
+      'ray-x/navigator.lua',
+     
+      -- '~/github/ray-x/navigator.lua',
+      dependencies = { 'ray-x/guihua.lua', build = 'cd lua/fzy && make' },
+      config = function()
+        require('navigator').setup({
+          keymaps = {
+            {
+              key = '<Leader>rn',
+              func = require('navigator.rename').rename,
+              desc = 'rename',
+            },
+          },
+          lsp = {
+            -- disable_lsp = { 'rust_analyzer', 'clangd' },
+          },
+        })
+      end,
+    },
+    {
+      'hrsh7th/nvim-cmp',
+      dependencies = {
+        'neovim/nvim-lspconfig',
+        'hrsh7th/cmp-nvim-lsp',
+      },
+      config = function()
+        -- Add additional capabilities supported by nvim-cmp
+        local cmp = require('cmp')
+        cmp.setup({
+          snippet = {
+            expand = function(args)
+              luasnip.lsp_expand(args.body)
+            end,
+          },
+          mapping = cmp.mapping.preset.insert({
+            ['<C-u>'] = cmp.mapping.scroll_docs(-4), -- Up
+            ['<C-d>'] = cmp.mapping.scroll_docs(4), -- Down
+            -- C-b (back) C-f (forward) for snippet placeholder navigation.
+            ['<C-Space>'] = cmp.mapping.complete(),
+            ['<CR>'] = cmp.mapping.confirm({
+              behavior = cmp.ConfirmBehavior.Replace,
+              select = true,
+            }),
+          }),
+          sources = {
+            { name = 'nvim_lsp' },
+          },
+        })
+      end,
+    },
+    {
+      'ray-x/go.nvim',
+
+      -- dev = true,
+      ft = 'go',
+      dependencies = {
+        'mfussenegger/nvim-dap', -- Debug Adapter Protocol
+        'rcarriga/nvim-dap-ui',
+        'theHamsta/nvim-dap-virtual-text',
+        'ray-x/guihua.lua',
+      }, 
+      config = function()
+        require('go').setup({
+          verbose = true,
+          lsp_cfg = {
+            handlers = {
+              ['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, { border = 'double' }),
+              ['textDocument/signatureHelp'] = vim.lsp.with(
+                vim.lsp.handlers.signature_help,
+                { border = 'round' }
+              ),
+            },
+          }, -- false: do nothing
+        })
+      end,
+    },
+  }

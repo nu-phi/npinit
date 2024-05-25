@@ -1,0 +1,7 @@
+C:\terminals\extra\shell_setup\setup_extraterm_bash.sh
+C:\terminals\extra\shell_setup\transformed_bash_to_nu.nu
+C:\Users\sergi\AppData\Roaming\nushell\config.nu
+C:\Users\sergi\AppData\Roaming\nushell\extraterm.nu
+C:\Program Files\Notepad++\themes\neo_dark.xml
+C:\Users\sergi\AppData\Roaming\nushell\_plugin.nu
+C:\Users\sergi\AppData\Roaming\Notepad++\plugins\Config\converter.ini

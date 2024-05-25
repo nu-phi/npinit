@@ -1,0 +1,9 @@
+2024-03-04 18:16:13  WM_QUERYENDSESSION (lParam: 1073741824 - ENDSESSION_CRITICAL) =====================================
+2024-03-04 18:16:13  WM_ENDSESSION (wParam: TRUE, lParam: 1073741824 - ENDSESSION_CRITICAL)
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\config.xml is opened.
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\config.xml  8080/8080 bytes are written.
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\config.xml is closed.
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\session.xml is opened.
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\session.xml  10669/10669 bytes are written.
+2024-03-04 18:16:13  C:\Users\sergi\AppData\Roaming\Notepad++\session.xml is closed.
+2024-03-04 18:16:13  WM_DESTROY (isEndSessionStarted == true)
