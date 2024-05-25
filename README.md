@@ -1,0 +1,2 @@
+# npinit
+ np
